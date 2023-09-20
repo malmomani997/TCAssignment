@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Regression]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="TCAssignmentScenarios.TestHelpers.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="RegressionTest(failed)" verbose="0">
+    <classes>
+      <class name="TCAssignmentScenarios.PagesScenarios.PlaceOrdersTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="placeOrderWithPremiumPlanOnBahrainLocal"/>
+          <include name="setUp"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- TCAssignmentScenarios.PagesScenarios.PlaceOrdersTests -->
+      <class name="TCAssignmentScenarios.PagesScenarios.StcLandingPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyGiftCardSectionIsOnlyInSaudi"/>
+          <include name="setUp"/>
+          <include name="verifyPricesOfPlansOnAllLocals"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- TCAssignmentScenarios.PagesScenarios.StcLandingPageTest -->
+    </classes>
+  </test> <!-- RegressionTest(failed) -->
+</suite> <!-- Failed suite [Regression] -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Regression">
+
+    <listeners>
+        <listener class-name="TCAssignmentScenarios.TestHelpers.Listeners"></listener>
+    </listeners>
+
+    <test name="RegressionTest">
+        <classes>
+            <class name="TCAssignmentScenarios.PagesScenarios.StcLandingPageTest"></class>
+            <class name="TCAssignmentScenarios.PagesScenarios.SignUpTests"></class>
+            <class name="TCAssignmentScenarios.PagesScenarios.PlaceOrdersTests"></class>
+        </classes>
+    </test>
+
+</suite>

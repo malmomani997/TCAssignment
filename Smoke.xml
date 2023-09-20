@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Smoke Suite">
+
+    <listeners>
+        <listener class-name="TCAssignmentScenarios.TestHelpers.Listeners" />
+    </listeners>
+
+    <test name="Smoke Test">
+        <groups>
+            <run>
+                <include name="Smoke" />
+            </run>
+        </groups>
+
+        <classes>
+            <class name="TCAssignmentScenarios.PagesScenarios.StcLandingPageTest" />
+            <class name="TCAssignmentScenarios.PagesScenarios.SignUpTests" />
+            <class name="TCAssignmentScenarios.PagesScenarios.PlaceOrdersTests" />
+        </classes>
+
+    </test>
+</suite>
